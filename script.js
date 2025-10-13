@@ -24,6 +24,14 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
+
+// Flip certification cards on click
+document.querySelectorAll('.cert-card').forEach(card => {
+  card.addEventListener('click', () => {
+    card.classList.toggle('flipped');
+  });
+});
+
 // Current year in footer
 document.getElementById('year').textContent = new Date().getFullYear();
 
